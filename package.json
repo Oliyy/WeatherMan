@@ -6,7 +6,8 @@
   "dependencies": {
     "discord.js": "^11.3.2",
     "enmap": "^2.6.3",
-    "file-system": "^2.2.2"
+    "file-system": "^2.2.2",
+    "mongodb": "^3.1.1"
   },
   "devDependencies": {},
   "author": "Oliy Barrett"
