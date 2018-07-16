@@ -3,7 +3,7 @@ module.exports = (client, message) => {
 
   if (message.content.indexOf(client.config.prefix)) return;
 
-  const args = message.content.slice(client.config.prefix.length).trim().split(/ +g);
+  const args = message.content.slice(client.config.prefix.length).trim().split(/ /g);
   const command = args.shift().toLowerCase();
 
   const cmd = client.commands.get(command);
