@@ -1,3 +1,4 @@
 #heck
-node_modules/
-config.json/
+#Ignoring node_modules, you should probably install them yourself
+/node_modules/
+/config.json/
