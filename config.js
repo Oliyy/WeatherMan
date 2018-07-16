@@ -1,5 +1,6 @@
 {
   name: "WeatherMan",
   token: "",
-  prefix: "weatherman"
+  prefix: "weatherman",
+  botLeader: ""
 }
