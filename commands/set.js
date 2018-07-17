@@ -21,14 +21,21 @@ exports.run = (client, message, args) => {
           message.channel.send('Location set!').catch(console.error);
         });
       } else {
-        var query = { userid: message.author.id };
-        var updatedLocation = { $set: {location: args[0], preferredUnit: args[1] } };
+        var query = {
+          userid: message.author.id
+        };
+        var updatedLocation = {
+          $set: {
+            location: args[0],
+            preferredUnit: args[1]
+          }
+        };
         weatherman.collection("users").updateOne(query, updatedLocation, function(err, res) {
-        if (err) throw err;
-        console.log("Location updated for user " + message.author.id);
+          if (err) throw err;
+          console.log("Location updated for user " + message.author.id);
 
-        message.channel.send('Location updated!').catch(console.error);
-      })
+          message.channel.send('Location updated!').catch(console.error);
+        })
       }
       db.close();
     });
