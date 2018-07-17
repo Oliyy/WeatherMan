@@ -3,7 +3,7 @@ var Api = require('../api.js')
 var clothing = require('../clothingDecider.js')
 var fs = require("fs");
 var Canvas = require("canvas");
-var canvas = new Canvas(900, 300, "png");
+var canvas = new Canvas(1000, 300, "png");
 var g = canvas.getContext("2d"),
 grd;
 
@@ -22,11 +22,11 @@ exports.run = (client, message, args) => {
               var string = `Today in ${resp.name} it's ${temperatureRounded} degrees`;
               var string2 = clothing.decideClothing(temperatureRounded, result.preferredUnit);
 
-              grd = g.createLinearGradient(0.000, 150.000, 900.000, 150.000);
+              grd = g.createLinearGradient(0.000, 150.000, 1000.000, 150.000);
               grd.addColorStop(0.00, 'rgba(153, 58, 255, 1.000)');
               grd.addColorStop(1.000, 'rgba(0, 117, 226, 1.000)');
               g.fillStyle = grd;
-              g.fillRect(0, 0, 900, 300);
+              g.fillRect(0, 0, 1000, 300);
 
               g.font = "40px RobotoLight";
               g.fillStyle = "white";
