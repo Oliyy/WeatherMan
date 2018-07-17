@@ -9,6 +9,9 @@ exports.run = (client, message, args) => {
     if (err) throw err;
     console.log(result);
     Api.getWeatherforLocation(result.location, result.preferredUnit).then((resp) => {
+//       message.channel.send("some text", {
+//     file: "http://link.to/your.file" // Or replace with FileOptions object
+// });
       message.channel.send("will do image generate soon, but it's " + resp.main.temp + " in " + resp.name);
     })
     db.close();
