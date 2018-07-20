@@ -6,6 +6,8 @@ const client = new Discord.Client();
 const config = require('./config.json');
 client.config = config;
 
+
+
 fs.readdir("./events/", (err, files) => {
   if (err) return console.error(err);
   files.forEach(file => {
@@ -29,3 +31,6 @@ fs.readdir("./commands/", (err, files) => {
 });
 
 client.login(config.token);
+
+
+    

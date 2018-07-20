@@ -1,5 +1,5 @@
 exports.decideClothing = function(temperature, units) {
-  if (temperature < 10 && units === "metric") {
+    if (temperature < 10 && units === "metric") {
     let ops = ["You'll need a coat!", "Make sure to bring your coat!", "Better get that coat"]
     return ops[Math.floor(Math.random() * ops.length)];
   } else if (temperature < 19 && units === "metric") {

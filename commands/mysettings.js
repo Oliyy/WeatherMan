@@ -1,6 +1,7 @@
 const MongoClient = require('mongodb').MongoClient;
 
 exports.run = (client, message, args) => {
+  client.user.setUsername("Weather");
   MongoClient.connect(client.config.mongoURL, function(err, db) {
     if (err) throw err
     var weatherman = db.db("weatherman");
