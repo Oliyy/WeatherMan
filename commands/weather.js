@@ -19,6 +19,7 @@ exports.run = (client, message, args) => {
             Api.getWeatherforLocation(result.location, result.preferredUnit).then((resp) => {
               var temperatureRounded = Math.round(parseFloat(resp.main.temp));
               var hi = `Hello ${message.author.username}!`;
+              var unitAppend = 'C';
               var string = `Today in ${resp.name} it's ${temperatureRounded}°${unitAppend}`;
               var string2 = clothing.decideClothing(temperatureRounded, result.preferredUnit);
 
@@ -42,7 +43,6 @@ exports.run = (client, message, args) => {
 
               var buf = canvas.toBuffer();
               fs.writeFileSync(`${message.author.id}.png`, buf);
-
 
               setTimeout(function() {
                 message.channel.send( {

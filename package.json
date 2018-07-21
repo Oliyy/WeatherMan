@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "canvas": "^1.6.11",
+    "date-events": "^1.0.1",
     "discord.js": "^11.3.2",
     "enmap": "^2.6.3",
     "file-system": "^2.2.2",
