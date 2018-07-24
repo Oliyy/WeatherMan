@@ -1,5 +1,5 @@
 #heck
 #Ignoring node_modules, you should probably install them yourself
 /node_modules/
-/config.json/
+config.json/
 /pkg-config-0.28/
