@@ -1,9 +1,0 @@
-{
-  "name": "WeatherMan",
-  "token": "NDY4MjY1Mzc0NTQzMjQ5NDA5.Di2prw.WgnVVRbdK1VDy9PI7C3yX8WMVi8",
-  "prefix": "!",
-  "botLeader": "129908908096487424",
-  "mongoURL": "mongodb://localhost:27017/",
-  "weatherToken": "bcee013c2842a7c5b63327481fc9db5e",
-  "weatherurl": "http://api.openweathermap.org/"
-}
