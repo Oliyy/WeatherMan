@@ -42,7 +42,7 @@ exports.run = (client, message, args) => {
               g.fillText(string2, 30, 225);
 
               var buf = canvas.toBuffer();
-              fs.writeFileSync(`${message.author.id}.png`, buf);
+              fs.writeFileSync(`images/${message.author.id}.png`, buf);
 
               setTimeout(function() {
                 message.channel.send( {
